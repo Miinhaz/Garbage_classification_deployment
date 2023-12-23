@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Garbage Classification</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="static/css/bootstrap.css" />
+    <link rel="stylesheet" href="static/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="static/css/style.css" />
+    <link rel="stylesheet" href="static/css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/styles.css') }}"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" href="static/images/g2.jpg" type="image/gif" />
+
+    <!-- Button Styles -->
+    <style>
+      .btn-custom {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: yellow;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .btn-custom:hover {
+        background-color: #0056b3;
+      }
+
+      .social-icon {
+        color: #007bff;
+        font-size: 20px;
+        margin-right: 10px;
+      }
+
+      .social-icon:hover {
+        color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hero_area">
+      <!-- Header Section -->
+      <header class="header_section">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container">
+            <a class="navbar-brand" href="index.html">
+              <span>GarbageNet</span>
+            </a>
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html"
+                    >Home <span class="sr-only">(current)</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- End Header Section -->
+
+      <!-- Slider Section -->
+      <section class="slider_section">
+        <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container">
+                <h1 class="hhh">
+                  <span>Garbage</span>
+                  <br />
+                  <span>Classification</span>
+                </h1>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="detail-box">
+                      <p>Choose Image and Predict</p>
+                      <div class="upload-container">
+                        <form id="upload-form" enctype="multipart/form-data">
+                          <label for="image-input" class="btn-custom"
+                            >Upload
+                            <input
+                              type="file"
+                              id="image-input"
+                              name="image"
+                              accept="image/*"
+                            />
+                          </label>
+                          <button
+                            type="submit"
+                            id="predict-button"
+                            class="btn-custom"
+                          >
+                            Predict
+                          </button>
+                          <div id="uploading-message" style="display: none">
+                            Getting Result...
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="result-box">
+                      <div id="result"></div>
+                      <img id="uploaded-image" src="" alt="Uploaded Image" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Slider Section -->
+    </div>
+
+    <section class="about_section layout_padding-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="detail-box">
+              <div class="heading_container">
+                <h2>About Us</h2>
+              </div>
+              <p>
+                Minhaz, Roll: 1804038, Dept. of Electronics and
+                Telecommunication Engineering, RUET.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="img-box">
+              <img src="static/images/ai.jpg" alt="" class="abt" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="info_section layout_padding2">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-md-6 d-flex justify-content-between align-items-center"
+          >
+            <div class="info_contact">
+              <h4>Contact</h4>
+              <div class="contact_link_box">
+                <a href="">
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                  <span>miinhaz14@gmail.com</span>
+                </a>
+              </div>
+            </div>
+            <div class="info_social">
+              <a href="" class="social-icon"
+                ><i class="fa fa-facebook" aria-hidden="true"></i
+              ></a>
+              <a href="" class="social-icon"
+                ><i class="fa fa-twitter" aria-hidden="true"></i
+              ></a>
+              <a href="" class="social-icon"
+                ><i class="fa fa-linkedin" aria-hidden="true"></i
+              ></a>
+              <a href="" class="social-icon"
+                ><i class="fa fa-instagram" aria-hidden="true"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="static/js/jquery-3.4.1.min.js"></script>
+    <script src="static/js/bootstrap.js"></script>
+    <script src="static/js/custom.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  </body>
+</html>
