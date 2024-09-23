@@ -1,1 +1,1 @@
-# Grb_Class2
+This repository is for the deployment of a journal project I worked on, which focuses on a deep learning-based approach. The project explores advanced techniques and models to achieve state-of-the-art results in classification tasks. All relevant deployment files are included for further exploration, but the code and models are unavailable due to confidentiality.
