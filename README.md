@@ -3,13 +3,30 @@
 This repository contains the deployment files for a deep learning-based **Waste Classification** project. The project focuses on automating the classification of various waste types using advanced deep learning techniques. The model (`Mmodel.h5`) used for the deployment and prediction via the website is included in this repository. A **trial model** for exploration purposes can be found [here](https://github.com/Miinhaz/Garbage_classification_deployment/blob/main/templates/final-model.ipynb).
 
 ## Project Overview
-The goal of this project is to classify waste materials such as **Metal**, **Plastic**, **Glass**, **Paper**, and more using deep learning. This automation helps streamline waste management processes, contributing to more sustainable practices.
+The aim of this project is to classify waste materials such as **Metal**, **Plastic**, **Glass**, **Paper**, and more using a modified deep learning architecture. This automation helps streamline waste management processes, contributing to more sustainable practices and efficient waste sorting systems.
+
+The architecture incorporates a **Modified DenseNet201** model with a **Parallel CNN Approach** utilizing **Squeeze-and-Excitation (SE) blocks**, providing significant improvements over existing methods in terms of both accuracy and efficiency.
 
 ## Key Features
 - **Flask App**: A web interface for deploying the waste classification model.
 - **TensorFlow-based Model** (`Mmodel.h5`): Used for real-time predictions via the web interface.
 - **Gradio Interface**: A simpler method of deployment for fast and easy testing.
+- **Modified DenseNet201 Architecture**: Enhanced using a parallel CNN approach with **Squeeze-and-Excitation (SE) blocks** for improved accuracy.
 - **Image Preprocessing**: Automatically resizes and normalizes images for accurate predictions.
+
+## 🧠 Model Architecture
+The core model is based on **Modified DenseNet201** combined with a **Parallel CNN Approach**. This model employs **Squeeze-and-Excitation (SE) blocks** that dynamically recalibrate channel-wise feature responses, enabling the network to focus on more important features.
+
+### Key Advantages:
+- **Improved accuracy** by refining the model’s ability to focus on critical features of the waste images.
+- **Efficient learning** through the use of SE blocks, which allow better feature extraction with less computational cost.
+- **Better performance** than existing architectures due to the combination of DenseNet’s deep feature propagation and SE's feature recalibration mechanism.
+
+This approach has proven to deliver **better results** in waste classification compared to conventional models by effectively handling the complexity of classifying a diverse range of waste types.
+
+### How it Works:
+- The **Parallel CNN branches** with both **MaxPooling** and **AveragePooling** are used to extract complementary features from the input image.
+- The **Squeeze-and-Excitation mechanism** enhances the network's focus on the most important parts of the input image, leading to improved classification accuracy.
 
 ## 🗂 Folder Structure
 
@@ -124,7 +141,7 @@ gr_interface.launch()
 ```
 
 ### Model Details
-- The **Mmodel.h5** file contains the deep learning model based on **Modified DenseNet201** architecture with **Squeeze-and-Excitation (SE) blocks**. It has been trained on a dataset of various waste images and is used for real-time predictions via both Flask and Gradio interfaces.
+- The **Mmodel.h5** file contains the deep learning model based on **Modified DenseNet201** architecture with **Parallel CNN branches** and **Squeeze-and-Excitation (SE) blocks**. This architecture provides enhanced accuracy by allowing the model to focus on the most relevant features of waste images.
 
 ## Deployment Methods
 
@@ -150,9 +167,13 @@ For a simpler deployment, the project also provides a **Gradio interface**, whic
 - **HTML/CSS/JS** for the front-end interface
 - **Gradio** for a simplified deployment interface
 
-
 ## 🔄 Future Work
 - **AI Enhancements**: Incorporating AI for automatic waste sorting without human intervention.
 - **Larger Dataset**: Expanding the dataset for more generalized and accurate predictions.
 - **Cloud Deployment**: Deploying the model on cloud platforms like AWS or GCP for broader accessibility.
+
+## 📝 Supreme Version
+
+A supreme version of this entire work is presented in a journal paper, which is currently under review in PLoS ONE.
+
 
