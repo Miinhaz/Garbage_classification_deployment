@@ -28,13 +28,12 @@ This approach has proven to deliver **better results** in waste classification c
 - The **Parallel CNN branches** with both **MaxPooling** and **AveragePooling** are used to extract complementary features from the input image.
 - The **Squeeze-and-Excitation mechanism** enhances the network's focus on the most important parts of the input image, leading to improved classification accuracy.
 
-## 🗂 Folder Structure
 
 ### Static & Templates
 - The **HTML, CSS, and JavaScript** files for the web interface are located in the `static` and `templates` folders.
 - The web interface allows users to upload images of waste for classification.
 
-### Flask Application (`app.py`)
+## Flask Application (`app.py`)
 The Flask app deploys the model and handles image uploads and predictions via a simple web interface.
 
 ```python
@@ -94,7 +93,7 @@ if __name__ == "__main__":
     app.run(debug=True)
 ```
 
-### Gradio Interface Deployment
+## Gradio Interface Deployment
 
 The project also provides a **Gradio interface** for quick testing and deployment.
 
