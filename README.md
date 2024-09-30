@@ -2,12 +2,12 @@
 
 This repository contains the files for a deep learning-based **Waste Classification** project. The project focuses on automating the classification of various waste types using advanced deep learning techniques. The model (`Mmodel.h5`) used for the deployment and prediction via the website is included in this repository. A **trial model** for exploration purposes can be found [here](https://github.com/Miinhaz/Garbage_classification_deployment/blob/main/templates/final-model.ipynb).
 
-## Project Overview
+## 🔍 Project Overview
 The aim of this project is to classify waste materials such as **Metal**, **Plastic**, **Glass**, **Paper**, and more using a modified deep learning architecture. This automation helps streamline waste management processes, contributing to more sustainable practices and efficient waste sorting systems.
 
 The architecture incorporates a **Modified DenseNet201** model with a **Parallel CNN Approach** utilizing **Squeeze-and-Excitation (SE) blocks**, providing significant improvements over existing methods in terms of both accuracy and efficiency.
 
-## Key Features
+## 🎯 Key Features
 - **Flask App**: A web interface for deploying the waste classification model.
 - **TensorFlow-based Model** (`Mmodel.h5`): Used for real-time predictions via the web interface.
 - **Gradio Interface**: A simpler method of deployment for fast and easy testing.
@@ -142,7 +142,7 @@ gr_interface.launch()
 ### Model Details
 - The **Mmodel.h5** file contains the deep learning model based on **Modified DenseNet201** architecture with **Parallel CNN branches** and **Squeeze-and-Excitation (SE) blocks**. This architecture provides enhanced accuracy by allowing the model to focus on the most relevant features of waste images.
 
-## Deployment Methods
+## 🖥️ Deployment Methods
 
 ### Flask-based Deployment
 Users can interact with the model via a web interface to upload images and receive predictions.
@@ -156,7 +156,7 @@ Users can interact with the model via a web interface to upload images and recei
 ### Gradio Deployment
 For a simpler deployment, the project also provides a **Gradio interface**, which allows users to test the model quickly and easily.
 
-- **Image 4**: Gradio Deployment Image  
+- **Image 3**: Gradio Deployment Image  
   ![Gradio Deployment](gradio.png)
 
 ## 🛠 Technologies Used
