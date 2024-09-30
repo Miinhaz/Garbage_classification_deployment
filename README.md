@@ -1,6 +1,6 @@
 # Waste Classification Model Deployment ♻️🚮
 
-This repository contains the deployment files for a deep learning-based **Waste Classification** project. The project focuses on automating the classification of various waste types using advanced deep learning techniques. The model (`Mmodel.h5`) used for the deployment and prediction via the website is included in this repository. A **trial model** for exploration purposes can be found [here](https://github.com/Miinhaz/Garbage_classification_deployment/blob/main/templates/final-model.ipynb).
+This repository contains the files for a deep learning-based **Waste Classification** project. The project focuses on automating the classification of various waste types using advanced deep learning techniques. The model (`Mmodel.h5`) used for the deployment and prediction via the website is included in this repository. A **trial model** for exploration purposes can be found [here](https://github.com/Miinhaz/Garbage_classification_deployment/blob/main/templates/final-model.ipynb).
 
 ## Project Overview
 The aim of this project is to classify waste materials such as **Metal**, **Plastic**, **Glass**, **Paper**, and more using a modified deep learning architecture. This automation helps streamline waste management processes, contributing to more sustainable practices and efficient waste sorting systems.
